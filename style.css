@@ -1,0 +1,150 @@
+:root {
+  --main-color:#02305a;
+  --background-color:#FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #e7e7dd;
+}
+
+main{
+  margin: 100px auto 0;
+  max-width: 80%;
+
+}
+
+button{
+  background-color: #008a93;
+  color: #e7e7dd;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0 7px ;
+  border: none;
+}
+button:hover{
+  background-color: #04b7c4
+}
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card{
+  background-color: #FFFFFF;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 36px;
+  border-radius: 15px;
+}
+
+.card.card--50{
+  width: 48%;
+}
+
+.card .card__title{
+  color: var(--background-color);
+  background-color: var(--main-color);
+  padding: 10px 20px;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.card .card__body{
+  color: var(--main-color);
+  padding:0 20px;
+  
+}
+i{
+  padding: 10px;
+}
+.fa-trash-alt{
+  color: #ff3860;
+}
+.fa-pencil-alt{
+  color: #23d160;
+}
+
+table{
+  text-align: left;
+  width: 100%;
+}
+
+.container-modal{
+  width: 25%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+.main-modal{
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  padding: 20px 10px;
+}
+
+.header-modal{
+  background-color: #02305a;
+  color: white;
+}
+h3{
+  padding: 10px 20px;
+}
+
+
+select{
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+/*
+.modal-madre{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,.65);
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  transition: visibility 0s, opacity .5s;
+}
+*/
+
+#modal-none, #modal-editar, #modal-eliminar{
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.521);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+}
+.modal-none{
+  opacity: 0;
+  pointer-events:none;
+}
+
+.mostrar{
+  opacity: 1;
+}
+
+.footer-modal{
+  background-color: #02305a;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+
